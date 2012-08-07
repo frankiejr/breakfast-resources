@@ -1,0 +1,7 @@
+# Allows font files to be accessed across domains in all browsers
+# Make sure the headers module is enabled: sudo a2enmod headers
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>

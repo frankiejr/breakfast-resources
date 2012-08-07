@@ -1,0 +1,205 @@
+/* CSS Reset ------------------------------------------------------ */
+html, body, div, img, object, iframe, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, h1, h2, h3, h4, h5, h6, p, ul, li {margin: 0; padding: 0; border: 0;}
+.inv {position: absolute; left: -999em; width: 1px; height: 1px; overflow: hidden;}
+.hidden {display: none;}
+.accessibility {position: absolute; left: -9999em;}
+header {display: block;}
+/* Structure ------------------------------------------------------ */
+body {
+	background: #EFEFEF;
+	color: #444;
+	font: 62.5% Verdana, sans-serif;
+}
+	.wrap {
+		position: relative;
+		width: 600px;
+		background: #FFF;
+		padding: 20px 24px;
+		margin: 0 auto 1px auto;
+	}
+	.extra.wrap {
+		margin-bottom: 30px;
+	}
+		.wrap:before {
+			position: absolute; 
+				left: 50px;
+				right: 50px;
+				top: 50%;
+				bottom: 0;
+				z-index: -2;
+			-moz-border-radius: 100px / 10px;
+			     border-radius: 100px / 10px;
+			-webkit-box-shadow:0 0 15px rgba(0,0,0,0.1);
+			   -moz-box-shadow:0 0 15px rgba(0,0,0,0.1);
+			        box-shadow:0 0 15px rgba(0,0,0,0.1);
+			content:"";
+		}
+		.extra.wrap:before {
+			-webkit-box-shadow:0 0 15px rgba(0,0,0,0.2);
+			   -moz-box-shadow:0 0 15px rgba(0,0,0,0.2);
+			        box-shadow:0 0 15px rgba(0,0,0,0.2);
+		}
+
+	#masthead {
+		overflow: hidden;
+		padding-top: 5px;
+		padding-bottom: 8px;
+	}
+		#siteLogo {
+			float: left;
+			display: block;
+			max-width: 45%;
+			margin: 11px 0 11px;
+		}
+	#pageTitles {
+		left: -2.5px;
+		border-left: 5px solid #CCC;
+	}
+	#container {}
+		.head {
+			font: normal 1.5em 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+			padding: 0;
+			margin: 0;
+		}
+		.subhead {
+			font: 4.4em 'Rokkitt', serif;
+			font-weight: 400;
+			padding: 0;
+			margin: 0;
+		}
+		.content {
+			font-size: 1.4em;
+			line-height: 1.57em;
+		}
+			a {
+				color: #E98C38;
+				text-decoration: none;
+			}
+				a:hover {
+					color: #8DC53E;
+				}
+			.content h2,
+			.content h3,
+			.content h4,
+			.content h5,
+			.content h6 {
+				font-family: 'Rokkitt', Verdana, sans-serif;
+			}
+			.content h2 {
+				font-size: 1.5em;
+				font-weight: normal;
+				padding: 0 0 7px;
+			}
+			.content h3 {
+				font-size: 1.36em;
+				font-weight: normal;
+				padding: 0 0 5px;
+			}
+			.content h4 {
+				font-size: 1.21em;
+				font-weight: normal;
+				padding: 0 0 3px;
+			}
+			.content h5 {
+				font-size: 1.07em;
+				padding: 0 0 1px;
+			}
+			.content h6 {
+				font-size: 1.07em;
+				font-weight: normal;
+				padding: 0 0 1px;
+			}
+			p,
+			ul,
+			ol {
+				padding: 0 0 7px;
+			}
+			.extra p,
+			.extra ul,
+			.extra ol {
+				padding-bottom: 20px;
+			}
+			ul {
+				list-style: square;
+				padding-left: 15px;
+			}
+				.linklist,
+				.boxlist {
+					position: relative;
+						left: -29px;
+					width: 100%;
+					color: #8DC53E;
+					padding-bottom: 0;
+					border-left: 5px solid #CCC;
+				}
+				.boxlist {
+					color: #444;
+					margin-bottom: 10px;
+				}
+				.extra .linklist,
+				.extra .boxlist {
+					margin-bottom: 20px;
+				}
+					.linklist li,
+					.boxlist li {
+						padding-left: 2px;
+						margin: 0 0 0 23px;
+					}
+						.linklist li:hover {
+							color: #444;
+						}
+					.linklist a,
+					.boxlist a {
+						display: block;
+						padding: 3px 9px;
+						-webkit-border-radius: 5px;
+						   -moz-border-radius: 5px;
+						        border-radius: 5px;
+					}
+						.linklist a:hover {
+							background: #F7F7F7;
+							color: #444;
+						}
+			.content .head {
+				font: normal 1.57em 'Rokkitt', Verdana, sans-serif;
+				padding: 0;
+				margin: 0;
+			}
+			.content .list.head {
+				font: normal 1.714em 'Rokkitt', Verdana, sans-serif;
+				padding: 0 0 7px 0;
+			}
+			.content .list.subhead {
+				position: relative;
+					top: -5px;
+				font: 0.79em Arial, Helvetica, sans-serif;
+				font-style: italic;
+				padding: 0;
+			}
+
+/* -------------------------------------------------------------------------- */
+/* list filter -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+#filterBox {
+	overflow: hidden;
+	padding: 7px 0 0 0;
+}
+	#filterBox input[type="text"] {
+		float: right;
+		width: 250px;
+		background: #FFF url(images/sprites.png) no-repeat 100% 7px;
+		color: #B0B0B0;
+		font: 1.4em Arial, Helvetica, sans-serif;
+		padding: 7px 10px;
+		border: 1px solid #E8E8E8;
+		-webkit-border-radius: 2px;
+		   -moz-border-radius: 2px;
+		        border-radius: 2px;
+		margin: 0;
+		outline: none;
+	}
+	#filterBox input:focus {
+		background: none;
+		color: #444;
+		border-color: #CCC;
+	}
